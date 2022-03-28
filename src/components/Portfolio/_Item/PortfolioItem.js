@@ -1,5 +1,5 @@
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import Ticker from '../../../components/Ticker/Ticker';
+import Ticker from '../../Ticker/Ticker';
 import Select from 'react-select';
 import './PortfolioItem.sass';
 
@@ -26,8 +26,8 @@ const customStyles = {
 	),
 	indicatorSeparator: styles => ({ ...styles, display: 'none' }),
 	singleValue: styles => ({ ...styles, color: '#999999' }),
-	dropdownIndicator: styles => ({ ...styles, padding: '0', marginBottom: '3px' }),
-	valueContainer: styles => ({ ...styles, padding: '0', flex: 'unset' }),
+	// dropdownIndicator: styles => ({ ...styles, padding: '0'}),
+	// valueContainer: styles => ({ ...styles, padding: '0', flex: 'unset' }),
 	menu: styles => (
 		{
 			...styles,
@@ -42,6 +42,9 @@ const customStyles = {
 function PortfolioItem () {
 	return (
 		<div className={`${cssPrefix}`}>
+			<div>
+
+			</div>
 			<Grid>
 				<Row middle='md'>
 					<Col md={2} >
@@ -70,7 +73,7 @@ function PortfolioItem () {
 							<input className={`${cssPrefix}__target-input`} type='text' />
 							<Select
 								options={options}
-								defaultValue={options[0]}
+								// defaultValue={options[0]}
 								isSearchable={false}
 								styles={customStyles}
 							/>

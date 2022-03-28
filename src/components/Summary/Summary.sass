@@ -1,0 +1,32 @@
+@import 'src/styles/variables/index.sass'
+
+.summary
+	display: flex
+	align-items: center
+	justify-content: center
+	gap: $base-gap * 3
+	margin-bottom: 6rem
+
+	&__block
+		display: flex
+		flex-direction: column
+		gap: $base-gap
+		padding: $base-indent $base-indent * 1.5
+
+		background-color: $color-background-white
+		border-radius: 1rem
+		box-shadow: $shadow-default
+
+	&__info
+		display: flex
+		align-items: center
+		gap: $base-gap
+
+	&__count
+		font-size: $font-size-2xlg
+		font-weight: $font-weight-bold
+
+		color: $color-accent-success
+
+		&--red
+			color: $color-accent-danger

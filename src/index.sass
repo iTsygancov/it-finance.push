@@ -1,4 +1,11 @@
-@import "~/src/styles/variables/fonts.sass"
+@import "src/styles/variables/index.sass"
+@import "src/styles/reset/reset.sass"
 
 html, body
-  font-family: $font-family-base
+  background-color: $color-background-grey
+  
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+
+.container
+  width: $max-content-width
+  margin: 0 auto
