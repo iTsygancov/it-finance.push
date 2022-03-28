@@ -1,0 +1,44 @@
+@import 'src/styles/variables/index.sass'
+
+.notificationsItem
+    display: flex
+    align-items: center
+    justify-content: center
+    
+    border-bottom: 1px solid $color-background-grey
+    cursor: pointer
+
+    &:last-of-type
+        border: none
+    
+    &__inner
+        display: flex
+        align-items: center
+        gap: $base-gap * 2
+        width: 100%
+        padding: $base-indent / 2 0
+
+    &__status
+        height: 12px
+        width: 12px
+
+        background-color: $color-main-primary
+        border-radius: 999px
+
+    &__body
+        display: flex
+        align-items: center
+        gap: $base-gap * 2
+
+    &__info
+        display: flex
+        flex-direction: column
+
+    &__abbreviation
+        font-size: $font-size-lg
+        font-weight: $font-weight-bold
+
+    &__fullname
+        width: 150px;
+        text-overflow: ellipsis;
+        overflow: hidden;

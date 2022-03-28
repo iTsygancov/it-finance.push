@@ -1,0 +1,42 @@
+@import 'src/styles/variables/index.sass'
+
+.usermenu
+
+    &__button
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 2.5rem
+        height: 2.5rem
+
+        font-weight: $font-weight-bold
+    
+        border: none
+        border-radius: 999px
+        background: $color-background-gradient
+        color: $color-background-white
+        box-shadow: $shadow-default
+        cursor: pointer
+
+    &__menu
+        display: flex
+        flex-direction: column
+        gap: $base-gap
+        min-width: 120px
+        padding: $base-indent 0
+        margin-top: $base-gap
+        margin-left: -80px
+
+        background-color: $color-background-white
+        border-radius: .5rem
+
+    &__link
+        display: block
+        width: 100%
+        padding-inline: $base-indent
+
+        color: $color-main-text
+        text-decoration: none
+
+        &--red
+            color: $color-accent-danger
